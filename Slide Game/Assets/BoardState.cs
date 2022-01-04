@@ -1,3 +1,7 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
 public class BoardState
 {
     private BoardObject[,] matrix;
@@ -5,6 +9,7 @@ public class BoardState
     public BoardState(int width, int height)
     {
         matrix = new BoardObject[width, height];
+
         for (int x = 0; x < width; x++)
         {
             for (int y = 0; y < height; y++)
